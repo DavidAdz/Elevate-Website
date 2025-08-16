@@ -16,10 +16,11 @@ let toggleNav = function(){
 let closeNav = function(){
     let getSidebar = document.querySelector(".dropdown-content");
     if(toggleNavStatus===true){
-        getSidebar.style.width = "20px";
+        getSidebar.style.width = "0px";
         document.body.style.overflowY = 'visible';
         toggleNavStatus = false;
 }
 
 }
+
 
