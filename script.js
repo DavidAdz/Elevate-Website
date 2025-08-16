@@ -7,7 +7,7 @@ let toggleNav = function(){
 
     if(toggleNavStatus===false){
 
-        getSidebar.style.width = "60vw";
+        getSidebar.style.width = "80vw";
         document.body.style.overflowY = 'hidden';
         toggleNavStatus = true;
 }
@@ -20,4 +20,5 @@ let closeNav = function(){
         document.body.style.overflowY = 'visible';
         toggleNavStatus = false;
 }
+
 }
