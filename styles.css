@@ -122,7 +122,7 @@ ul{
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-size: 48px;
+    font-size: 46px;
     gap:48px;
     padding-top: 30px;
     
@@ -303,4 +303,5 @@ footer figure strong{
     font-family: "Dancing Script", "serif";
     color: #7269d6;
     opacity: 0.7;
+
 }
