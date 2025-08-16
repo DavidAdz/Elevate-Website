@@ -98,6 +98,7 @@ p{
     text-align: center;
     align-items: center;
     padding: 20px;
+    padding-bottom:40px;
     
 }
 @media (max-width: 800px) {
@@ -136,4 +137,5 @@ button:hover{
     background-color: #f2f2f2;
     transform: translateY(-2px);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+
 }
