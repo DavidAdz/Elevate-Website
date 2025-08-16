@@ -24,6 +24,10 @@ form{
     padding: 2em;
     
 }
+p{
+    display:flex;
+    justify-content:center;
+}
 label,p{
     font-family: "Poppins", sans-serif;
     color: #3C3C3C;
@@ -68,5 +72,6 @@ button{
 button img:hover{
     transform: scale(1.05);
     transition: transform 0.3s ease;
+
 
 }
