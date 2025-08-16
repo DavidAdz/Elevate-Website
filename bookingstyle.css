@@ -20,6 +20,7 @@ form{
     align-items: center;
     justify-content: center;
     align-content: center;
+    align-self:center;
     background-color: #F0F4F8;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -76,5 +77,6 @@ button{
 button img:hover{
     transform: scale(1.05);
     transition: transform 0.3s ease;
+
 
 }
