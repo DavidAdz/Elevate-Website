@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+
+
+
+
+body{
+    background-color: #DCE6F2;
+    font-size: 24px;
+    margin:0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; /* scales image to cover entire viewport */
+    overflow-x: hidden;
+}
+
+p{
+    color:#3C3C3C;
+    }
+
+ul{
+    list-style: none;
+    list-style-position: inside;
+    padding-left: 0;
+    padding-right: 0;
+}
+.header-content{
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    position: relative;
+    
+
+}
+.header-content nav{
+    margin: 0;
+    background-color: #DCE6F2;
+    padding:1em;
+    display: flex;
+    z-index: 1000;
+    
+}
+
+.header-content nav ul{
+    display: flex;
+    list-style-type: none;
+    list-style-position: inside;
+    width:100%;
+    font-style: normal;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    align-items: center;
+    gap:8em;
+    margin-right: 1.5em;
+    margin-left: 1.5em;
+   
+} 
+
+@media (min-width: 800px){
+    .menu-button{
+        visibility: hidden;
+    }
+}
+@media (max-width:800px) {
+        .header-content nav ul li{
+            display: none;
+    }    
+    
+}
+
+.header-content nav ul{
+    display: flex;
+
+    
+}
+.header-content nav .sec-nav{
+    justify-content: flex-end;
+
+}
+
+.header-content nav ul a{
+    text-decoration: none;
+    color:#000000;
+    border-radius: 10%;
+}
+.header-content nav ul a:hover{
+    text-decoration: underline;
+}
+
+.menu-button{
+    height: 30px;
+    width: 30px;
+    background-image:url("menu.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    cursor: pointer;
+    border-radius: 100%;
+    
+ 
+}
+
+.dropdown-content{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:0;
+    right:0;
+    width:0px;
+    height:100%;
+    background-color:#DCE6F2;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    overflow: hidden;
+    overflow-y: auto;
+    align-items: center;    
+    transition: all 0.3s ease-in-out;
+
+}
+
+.dropdown-content ul{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 48px;
+    gap:48px;
+    padding-top: 30px;
+    
+
+}
+
+.dropdown-content a{
+    text-decoration: none;
+    color:#000000;
+    text-transform: uppercase;
+    font-family: "quicksand";    
+   
+}
+
+.close-button{
+    height: 50px;
+    width: 50px;
+    background-image: url("close.png");
+    background-size: 100%;
+    background-position: center;
+    cursor: pointer;
+    
+}
+.dropdown-content a:hover{
+    background-color: #868c94;
+    padding: 10px;
+    border-radius: 5%;
+   
+}
+
+.main-section{
+    display: flex;
+    background-color: #d8d5fa;
+    background-position: center;
+    padding:4em;
+    justify-content: center;
+    
+}
+
+.main-section figure{
+    display: flex;
+    margin:0;
+    gap:50px;
+
+}
+
+.main-section .profile-image {
+    width: 20vw;
+    height: 30vw;
+    min-width: 150px;
+    min-height: 200px;
+    border-radius: 100%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    
+    
+}
+.main-section .profile-info{
+    padding: 0;
+    margin: 0;
+    align-content: center;
+
+}
+
+.main-section .profile-info h1{
+    font-size: clamp(1rem, 3vw, 3rem);
+    font-family: "Poppins", serif;
+    color: #3C3C3C;
+    flex-wrap: wrap;
+}
+.main-section figure figcaption{
+    color: #3C3C3C;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    font-size: clamp(0.5em, 2vw, 1em);
+    }
+
+
+.summary{
+    padding: 4em;
+    background-color: #DCE6F2;
+ 
+}
+.summary h1{
+ 
+    font-size: 48px;
+    font-family: "poppins", "serif";
+    text-align: center;
+}
+
+.summary article p{
+
+    text-align: center;
+    font-family: 'Garamond', sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 1.5;
+    
+}
+.extra-info{
+   background-color: rgb(255, 253, 249);
+
+   
+ 
+}
+.extra-info ol{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(auto, 600px));
+    grid-template-rows: repeat(4, minmax(auto, 150px));
+    justify-content: center;
+    gap:1em;
+    list-style-position: inside;
+    margin: 0;
+    padding-bottom: 3em;;
+    
+    
+
+}
+.extra-info h1{
+    color: #3C3C3C;
+    margin: 0;
+    font-size: 48px;
+    font-family: "Poppins", serif;
+    text-align: center;
+    padding: 1em;
+    
+}
+
+.extra-info li{
+    color: #3C3C3C;
+    border-radius: 20px;
+    background-color: rgb(255, 240, 217);
+    font-family: 'Garamond', sans-serif;
+    font-style: italic;
+    font-size: clamp(16px, 1.5vw, 24px);
+
+    align-content: center;
+    text-align: center;
+    padding:1em;
+    
+}
+
+footer{
+    background-color: #d8d5fa;
+    padding:0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p, figcaption{
+    font-style: "source sans pro", serif;
+    font-size: 18px;
+    flex-wrap: wrap;
+    text-align: center;
+    
+   
+}
+footer figcaption{
+    text-align: center;
+    line-height: 1.5;
+}
+footer a{
+    color: #3C3C3C;
+}
+
+footer figure{
+    flex-direction: column;
+    text-align: center;
+    width:fit-content;
+    justify-content: center;
+}
+footer figure img{
+    opacity: 0.7;
+}
+footer figure strong{
+    font-size: 24px;
+    font-family: "Dancing Script", "serif";
+    color: #7269d6;
+    opacity: 0.7;
+}

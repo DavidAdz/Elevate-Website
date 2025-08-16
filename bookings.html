@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elevate | Educational Psychology and Counselling</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="bookingstyle.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <nav id = "navigation"> 
+                <ul class="main-nav">
+                    <li><a href="./index.html"><strong>Main</strong></a></li>
+                    <li><a href="./services.html"><strong>Services</strong></a></li>
+                </ul>
+                <a href="./index.html"><img src="logo.png" alt="Elevate Logo" class="logo" width ="80" height="80"></a>
+                <ul class="sec-nav">
+                    <li><a href="./bookings.html"><strong>Bookings</strong></a></li>
+                    <div class="menu-button" onclick="toggleNav()"></div>
+                </ul>
+            </nav>
+           
+        </div>
+    </header>
+        <div class="dropdown-content">
+                <ul>
+                    <li><a href="./index.html"><strong>Main</strong></a></li>
+                    <li><a href="./services.html"><strong>Services</strong></a></li>
+                    <li><a href="./bookings.html"><strong>Bookings</strong></a></li>
+                </ul>
+                <div class="close-button" onclick="closeNav()"></div>
+        </div>
+    <main>
+        <form  Id = "myForm" POST ="https://formsubmit.co/dimgbadavid188@gmail.com" method="POST">
+            <h1>Book an Appointment</h1>
+            <p>Please fill out the form below to schedule an appointment. We will get back to you as soon as possible to confirm your booking.</p>
+            <input type="hidden" name="_subject" value="New Booking Request!">
+            <div class = "name">
+            <div class="first-name">
+            <label for="first-name">Name</label><br>
+            <input type="text" id="first-name" name="first-name" required placeholder="First Name">
+            </div>
+            <div class="surname">
+            <label for="surname"></label><br>
+            <input type="text" id="surname" name="surname" required placeholder="Surname">
+            </div> 
+            </div>
+        
+            <div class = "contact">
+            <label for="phone">Phone Number</label><br>
+            <input type="tel" id="phone" name="phone" required pattern="[0-9]{3}[0-9]{4}" placeholder="123-4567" title="Format: 123-4567">
+            </div>
+            <div class = "email">
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" required pattern = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$" placeholder="janedoe@example.com">
+            </div>
+            <div class = "service">
+            <label for="service">Service Required</label><br>
+            <select id="service" name="service">
+                <option value="psychosocial_counseling">Psychosocial Counseling</option>
+                <option value="educational_psychology">Educational Psychology</option>
+                <option value="marriage_counseling">Marriage Counseling</option>
+                <option value="family_counseling">Family Counseling</option>
+            </select>
+            </div>
+            <div class = "date-time">
+            <div class="date">
+            <label for="date">Preferred Date</label><br>
+            <input type="date" id="date" name="date" required>
+            </div>
+            <div class="time">
+            <label for="time">Preferred Time</label><br>
+            <input type="time" id="time" name="time" required>
+            </div>
+            </div>
+            <div class = "comments">
+            <label for="comments">Additional Comments</label><br> 
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+            </div>
+            <div class ="button">
+            <button type="submit"><img src="./submit.png" alt = "Submit" width = "180px" height = "70px"></button>
+            </div>
+        </form>
+        
+        <footer>
+                <p>Email: <a href="mailto:elevate.psycoach@gmail.com"><em>elevate.psycoach@gmail.com</em></a>
+                || Phone: <a href="tel:868-334-2972"><em>868-334-2972</em></a>/<a href="tel:868-784-9918"><em>868-784-9918</em></a></p>
+                <div class="footer-figure">
+                <figure>
+                    <img src="./logo.png" alt="Elevate Logo" class="footer-logo" width="150" height="150">
+                    <figcaption><strong>Let This Mind Be in You</strong></figcaption>
+                    <figcaption>&copy; 2025 Elevate. All rights reserved.</figcaption>
+                    <figcaption>Website designed by David D.</figcaption>
+                </figure>
+                </div>
+            </footer>
+    </main>
+
+</body>
+<script src="./script.js"></script>
+</html> 
+            
